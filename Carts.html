@@ -1,16 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AnHydrase Cart</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Infromation guide you!!!
-        
-        This page should contain 
-    1.a list the individual pictures, amount and quantity selected for purchase
-    2. It should also have a button to proceed to payment -->
+
+    <div class="container">
+        <h1> <img src="images/shopping-cart.png" width="50">Cart</h1>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="#">Home </a></li>
+                    <li> <a href="#">About </a></li>
+                    <li> <a href="#">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <div>
+                <input type="text" placeholder="search">
+                <button>search</button>
+            </div><br>
+
+            <!----Cart Item Details---->
+
+            <div class="small-container cart-page">
+
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/apple.jpg">
+                                <div>
+                                    <p>Sweet Apple</p>
+                                    <small>Price: $3.00</small>
+                                    <br>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/sound system.jpg">
+                                <div>
+                                    <p>Sound System</p>
+                                    <small>Price: $70.00</small>
+                                    <br>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$70</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/strawberry.jpg">
+                                <div>
+                                    <p>Homegrown Strawberries</p>
+                                    <small>Price: $4.00</small>
+                                    <br>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$4</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="images/oranges.jpg">
+                                <div>
+                                    <p>Homegrown Oranges</p>
+                                    <small>Price: $2.00</small>
+                                    <br>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$2</td>
+                    </tr>
+
+                </table>
+
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$126.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tax</td>
+                            <td>$7.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Total</td>
+                            <td>$133.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
